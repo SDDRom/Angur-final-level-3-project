@@ -1,0 +1,13 @@
+<section class="tasks">
+    <div class="task-item" *ngFor="let task of tasks">
+        <h1>{{task?.name}}</h1>
+        <p>{{task?.description}}</p>
+        <p>Task Status :
+            <span 
+            [style]="task.status.startsWith('SUCCESS') ? 'background-color: green' : 'background-color: yellow'">
+                {{task.status}}
+            </span>
+        </p>
+        <!-- <img [src]="task?.image"/> -->
+    </div>
+</section>

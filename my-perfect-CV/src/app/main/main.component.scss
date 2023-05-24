@@ -1,0 +1,129 @@
+.content {
+    display: flex;
+
+    .left {
+        width: 30%;
+        background-color: black;
+        margin-top: -95px;
+        border-radius: 10px;
+        border-top: 5px solid white;
+        h1{
+            color: teal;
+        }
+
+        .contact {
+            margin-top: 10px;
+
+            h4 {
+                font-size: 50px;
+                font-weight: normal;
+                margin: 2px 0;
+                color: teal;
+            }
+
+            h5 {
+                font-size: 18px;
+                margin: 10px 0;
+                padding-left: 4rem;
+                color: white;
+            }
+
+            p {
+                font-size: 17px;
+                padding-left: 4rem;
+                color: rgb(26, 6, 241);
+
+            }
+        }
+
+        .follow {
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: normal;
+
+            h4 {
+                font-size: 18px;
+                margin: 10px 0;
+                color: white;
+                padding-left: 4rem;
+            }
+
+            p {
+                font-size: 15px;
+                color: red;
+                padding-left: 4rem;
+            }
+        }
+
+    }
+
+    .right {
+        width: 70%;
+        background-color: teal;
+        color: white;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: normal;
+        margin-top: -95px;
+        border-radius: 10px;
+        border-top: 5px solid white;
+        border-left: 10px solid white;
+
+        h1 {
+            color: black;
+            margin-top: 2rem;
+        }
+
+        p {
+            padding-left: 65px;
+            text-align: justify;
+            word-break: break-all;
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .skills {
+            margin-top: 3px;
+
+            .bars {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px 10px;
+
+                // display: flex;
+                .bar p {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+
+                span {
+                    display: block;
+                    width: 80%;
+                    height: 10px;
+                    background-color: red;
+                    margin-top: 10px;
+                    margin-left: 1rem;
+                    border-radius: 10px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 80%;
+                        height: 80%;
+                        background-color: blue;
+                        top: 50%;
+                        left: 2px;
+                        transform: translateY(-50%);
+                        border-radius: 10px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

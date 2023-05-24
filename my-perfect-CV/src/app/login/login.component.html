@@ -1,0 +1,26 @@
+<section>
+<div class="hero">
+    <div class="hero-me">
+        <h1 class="heading">Login</h1>
+        <form action="">
+            <div class="el-h">
+                <input type="email" [(ngModel)]="user.email" name="email" placeholder="User email" required="re
+                "/>
+            </div>
+            <div class="el-h">
+                <input type="password" [(ngModel)]="user.password" name="password" placeholder="password" required="re
+                "/>
+            </div>
+            <div class="el-h">
+                <p>
+                    Haven't account? <button type ="button" ><a routerLink="/signup">Register</a></button>
+    
+                </p>
+            </div>
+            <div class="el-h">
+                <button type="submit" (click)="submitForm()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+</section>

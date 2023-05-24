@@ -1,0 +1,49 @@
+.mainly{
+    background-color: rgba(0, 0, 0, 0.989);
+    color: white;
+    text-align: center;
+    height: 90vh;
+
+    .main{
+        padding-top: 6rem;
+        font-family: sans-serif;
+        margin-bottom: 6rem;
+        line-height: 5rem;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        button{
+            background-color: rgb(132, 13, 33);
+            border: none;
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        .out{
+            height: 5rem;
+            background-color: teal;
+            color: white;
+            font-size: 2rem;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            padding-left: 0.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-left: 1rem;
+            margin-top: -0.5rem;
+            cursor: pointer;
+
+            a{
+                text-decoration-line: none;
+            }
+
+            &:hover{
+                background-color: white;
+                color: teal;
+            }
+        }
+    }
+}

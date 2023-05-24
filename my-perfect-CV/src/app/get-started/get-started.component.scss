@@ -1,0 +1,36 @@
+.start{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/pic.jpg");
+    background-size: contain;
+    .backgroun-color{
+        height: 100%;
+        background-color: rgba(0, 128, 128, 0.448);
+
+        .login{
+            height: 8rem;
+            // width: 10rem;
+            background-color: black;
+            color: white;
+            font-size: 5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-left: 40rem;
+            margin-top: 25rem;
+            cursor: pointer;
+
+            a{
+                text-decoration-line: none;
+            }
+
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+}

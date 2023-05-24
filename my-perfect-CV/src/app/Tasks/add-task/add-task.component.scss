@@ -1,0 +1,46 @@
+.add-task{
+    width: 50%;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    input{
+        width: 60%;
+        border: none;
+        font-size: 1.5rem;
+        text-align: center;
+        border-radius: 2rem;
+        margin-top: 3rem;
+    }
+    select{
+        width: 25%;
+        border: none;
+    }
+    .out{
+        height: 5rem;
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        padding-left: 0.5rem;
+        border-radius: 10px;
+        font-weight: 600;
+        // margin-left: 10rem;
+        margin-top: 1rem;
+        cursor: pointer;
+
+        a{
+            text-decoration-line: none;
+        }
+
+        &:hover{
+            background-color: white;
+            color: teal;
+        }
+    }
+}

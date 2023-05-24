@@ -1,0 +1,80 @@
+.nav{
+    display: flex;
+    background-color: teal;
+    border-top-left-radius: 50px;
+}
+.logo{
+    width: 7rem;
+    height: 5rem;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    line-height: 0;
+    padding-top: 3.5rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+
+    .p{
+        margin-top: -1rem;
+        padding-left: 2rem;
+    }
+    .cv{
+        margin-top: -1rem;
+        padding-left: 3rem;  
+    }
+
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+.bout{
+    margin-left: 20rem;
+    margin-top: 2rem;
+    
+    ul{
+        display: flex;
+        list-style: none;
+        font-size: 2rem;
+        color: white;
+
+        li{
+            margin-left: 3rem;
+        }
+        .home{
+            border-bottom: 4px solid black;
+            width: 50px;
+            margin-right: 1rem;
+            height: 2.5rem;
+        }
+        .out{
+            height: 5rem;
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            padding-left: 0.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-left: 10rem;
+            margin-top: -0.5rem;
+            cursor: pointer;
+
+            a{
+                text-decoration-line: none;
+            }
+
+            &:hover{
+                background-color: white;
+                color: teal;
+            }
+        }
+    }
+}

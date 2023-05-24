@@ -1,0 +1,46 @@
+<style>
+    .add-task-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        /* width: 50%; */
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        margin: 1rem;
+    }
+</style>
+
+<section class="add-task-section">
+<div class="add-task">
+    <input type="text" [(ngModel)]="task.taskName" name="name" class="form-control" placeholder="Task name">
+    <textarea type="text" [(ngModel)]="task.description" name="description" placeholder="Task description"
+        class="form-control" rows="5" cols="50">
+    </textarea>
+    <input type="date" [(ngModel)]="task.dueDate" name="dueDate" class="form-control" placeholder="Task due date">
+    <input type="date" name="startDate" [(ngModel)]="task.startDate" class="form-control" placeholder="Task start date">
+    <select name="level" id="level" [(ngModel)]="task.level">
+        <option value="Completed">completed</option>
+        <option value="Progress">progress</option>
+        <option value="Not-Started" >not_started</option>
+    </select>
+    <select name="difficulty" id="difficulty" [(ngModel)]="task.difficulty">
+        <option value="high">high</option>
+        <option value="medium">medium</option>
+        <option value="standard" selected>standard</option>
+    </select>
+    <select name="status" id="status" [(ngModel)]="task.status">
+        <option value="Suceess">Suceess</option>
+        <option value="Failed">Failed </option>
+        <option value="Pause" selected>Pause </option>
+        <option value="Processing" selected>Processing</option>
+    </select>
+    <!-- <img src="" alt="task img" class="form-control"> -->
+    <button class="out" (click)="saveTask()">Save task</button>
+</div>
+</section>
